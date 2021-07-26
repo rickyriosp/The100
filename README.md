@@ -1,2 +1,2 @@
-# JsSiteTemplate
- Site Template for JS Projects
+# THE 100
+ A Javascript project on loops.
