@@ -64,19 +64,26 @@
             <h2 class="border-1 border-bottom border-dark">The Code for THE 100.</h2>
             <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col-lg-8">
-                    <pre class="line-numbers">
-                        <code class="language-javascript">
-                            // Call Hello World
-                            function HelloWorld() {
-                                alert("Hello World!");
-                            }
-                        </code>
-                    </pre>
+                    <pre data-src="/js/site.js" class="line-numbers"></pre>
                 </div>
-                <div class="col-lg-4">
+                <!-- <div class="col-lg-4">
                     <p>The Code is structured in one function.</p>
                     <h5>Hello World</h5>
                     <p>Hello World is a function that displays an alert with a message of "Hello World".</p>
+                </div> -->
+                <div class="col-lg-4 pt-2">
+                    <h5 class="pb-2 border-bottom border-2">getValues()</h5>
+                    <p>The getValues() function is responsible for retrieving the numbers the user provides in our input fields and parsing them as integers. If both inputs provided by the user are both numbers than we will call the generateNumbers() and displayNumbers() functions described below.</p>
+                    <br>
+                    <h5 class="pb-2 border-bottom border-2">generateNumbers()</h5>
+                    <p>The generateNumbers() function takes two parameters which are the starting value and the end value. The function uses a for loop to iterate through the numbers between the values the user provided and pushes those numbers to an array. The array is then returned.</p>
+                    <br>
+                    <h5 class="pb-2 border-bottom border-2">displayNumbers()</h5>
+                    <p>The displayNumbers function takes one parameter which is an array of integers. The function retrieves the table we made in HTML using the id and then sets the innerHTML to be empty so if the user spams the button it does not constantly add to the old table. Then using a for loop to iterate through the array of numbers (these are all the numbers between the 2 values the user provided) I seperate the numbers into two categories using if statements. If the number is divisible by two then I want the number to appear bolded otherwise the number wilk appear normally</p>
+                    <br>
+                    <br>
+                    <h5 class="pb-2 border-bottom border-2">Conclusion</h5>
+                    <p>The javascript code written for this app takes the user input and finds all numbers between those two. I then determine if when the numbers between what the user entered are divisible by 2 and if they are I apply a strong tag, otherwise no style is applied. The array of numbers is then added to table.</p>
                 </div>
             </div>
         </div>
